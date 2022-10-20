@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux JobberMan</title>
+    <link rel="stylesheet" href="./classroom.css">
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul>
+            <li class=".spaces"><a href=""><img src="/my-app/src/images/jobber_logo.svg"></a></li>
+            <li><a href="./index.html">Classroom Profile</a></li>
+            <li class="space"><a href="./classroom.html">Funzi <img src="../images/profilelogo.png" alt=""></a></li>
+        </ul>
+    </nav>
+    <div class="tabs">
+        <div class="tabs-1">
+            <div style="color: #066AEF ; cursor: pointer;"><img src="../images/yourcourses.svg"
+                    style="margin-right: 10px;">
+                Your Courses</div>
+            <div class="tab-1">
+                <ul>
+                    <li onclick="showTopics()"><a href="#"><img src="/my-app/src/images/topic.svg">Topics</a></li>
+                    <li onclick="showStudents()"><a href="#"><img src="../images/students.svg">Students | <span>
+                                7</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-2">
+            <ul>
+                <li onclick="showVideo()"><a href="#"><img src="/my-app/src/images/vdeo.svg">Video</a></li>
+                <li onclick="showLab()"><a href="#"><img src="../images/checkmark.svg">Lab</a></li>
+                <li onclick="showNotes()"><a href="#" style="color: black;"><img
+                            src="/my-app/src/images/notes.svg">Note</a></li>
+                <li onclick="showChat()"><a href="#"><img src="../images/chat.svg">Chat</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <section class="main">
+        <div class="left">
+            <div class="section-2 courses">
+                <ul>
+                    <li><img src="/my-app/src/images/vdeo.svg">Learn Product Design</li>
+                    <li><img src="/my-app/src/images/vdeo.svg">Using Figma to design a shopping App</li>
+                    <li><img src="/my-app/src/images/vdeo.svg">Wireframes</li>
+                    <li><img src="/my-app/src/images/vdeo.svg">Prototypes</li>
+                    <li><img src="/my-app/src/images/vdeo.svg">Learn Basic HTML</li>
+                    <li><img src="/my-app/src/images/vdeo.svg">Attributes, Psuedo class</li>
+                    <li><img src="/my-app/src/images/vdeo.svg">Putting all together</li>
+                    <li><img src="/my-app/src/images/vdeo.svg">Building an Admin Dashboard</li>
+                    <li><img src="/my-app/src/images/vdeo.svg">Learn Higher HTML</li>
+                    <li><img src="/my-app/src/images/vdeo.svg">Learn CSS</li>
+                    <li><img src="/my-app/src/images/vdeo.svg">Animations and Transitions</li>
+                    <li><img src="/my-app/src/images/vdeo.svg">Responsiveness</li>
+                    <li><img src="/my-app/src/images/vdeo.svg">Parralax designs</li>
+                    <li><img src="/my-app/src/images/vdeo.svg">Learn Basic Javascript</li>
+                    <li><img src="/my-app/src/images/vdeo.svg">Concepts of consitional statements</li>
+                    <li><img src="/my-app/src/images/vdeo.svg">Loops</li>
+                    <li><img src="/my-app/src/images/vdeo.svg">Creating a stop watch</li>
+
+                </ul>
+            </div>
+            <div class="section-2 students">
+                <ul>
+                    <li>
+                        <div><img src="/my-app/src/images/profilelogo.png">Funzi</div>
+                        <div><img src="/my-app/src/images/msg.svg">Write a message</div>
+                    </li>
+                    <li>
+                        <div><img src="/my-app/src/images/profilelogo.png">John</div>
+                        <div><img src="/my-app/src/images/msg.svg">Write a message</div>
+                    </li>
+                    <li>
+                        <div><img src="/my-app/src/images/profilelogo.png">David</div>
+                        <div><img src="/my-app/src/images/msg.svg">Write a message</div>
+                    </li>
+                    <li>
+                        <div><img src="/my-app/src/images/profilelogo.png">Josh</div>
+                        <div><img src="/my-app/src/images/msg.svg">Write a message</div>
+                    </li>
+                    <li>
+                        <div><img src="/my-app/src/images/profilelogo.png">Pius</div>
+                        <div><img src="/my-app/src/images/msg.svg">Write a message</div>
+                    </li>
+                    <li>
+                        <div><img src="/my-app/src/images/profilelogo.png">Emmanuel</div>
+                        <div><img src="/my-app/src/images/msg.svg">Write a message</div>
+                    </li>
+                    <li>
+                        <div><img src="/my-app/src/images/profilelogo.png">Gift</div>
+                        <div><img src="/my-app/src/images/msg.svg">Write a message</div>
+                    </li>
+                    <li>
+                        <div><img src="/my-app/src/images/profilelogo.png">Fortune</div>
+                        <div><img src="/my-app/src/images/msg.svg">Write a message</div>
+                    </li>
+                    <li>
+                        <div><img src="/my-app/src/images/profilelogo.png">CCodes</div>
+                        <div><img src="/my-app/src/images/msg.svg">Write a message</div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="videos">
+                <video width="750px" controls>
+                    <source src="../images/1 Introduction_to_React_and_Redux.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="fixed">
+                <div class="notes">
+                    <ul>
+                        <li>
+                            <div>
+                                <div><img src="/my-app/src/images/vdeo.svg">Learn Product Design</div>
+                                <div>Go to the Video</div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, conuuusectetur adipisicing elit. Delectus quo voluptate
+                                ducimus
+                                quisquam blanditiis nesciunt. Undhhe tempora rem culpa dolorum magni perspiciatis
+                                veritatis,
+                                expedita eligendi eos explicabo enitttkkkm. Voluptatum, veniam.</p>
+
+                        </li>
+                        <li>
+                            <div>
+                                <div><img src="/my-app/src/images/vdeo.svg">Learn Product Design</div>
+                                <div>Go to the Video</div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, conuuusectetur adipisicing elit. Delectus quo voluptate
+                                ducimus
+                                quisquam blanditiis nesciunt. Undhhe tempora rem culpa dolorum magni perspiciatis
+                                veritatis,
+                                expedita eligendi eos explicabo enitttkkkm. Voluptatum, veniam.</p>
+
+                        </li>
+
+                        <li>
+                            <div>
+                                <div><img src="/my-app/src/images/vdeo.svg">Learn Product Design</div>
+                                <div>Go to the Video</div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, conuuusectetur adipisicing elit. Delectus quo voluptate
+                                ducimus
+                                quisquam blanditiis nesciunt. Undhhe tempora rem culpa dolorum magni perspiciatis
+                                veritatis,
+                                expedita eligendi eos explicabo enitttkkkm. Voluptatum, veniam.</p>
+
+                        </li>
+
+                        <li>
+                            <div>
+                                <div><img src="/my-app/src/images/vdeo.svg">Learn Product Design</div>
+                                <div>Go to the Video</div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, conuuusectetur adipisicing elit. Delectus quo voluptate
+                                ducimus
+                                quisquam blanditiis nesciunt. Undhhe tempora rem culpa dolorum magni perspiciatis
+                                veritatis,
+                                expedita eligendi eos explicabo enitttkkkm. Voluptatum, veniam.</p>
+
+                        </li>
+
+                        <li>
+                            <div>
+                                <div><img src="/my-app/src/images/vdeo.svg">Learn Product Design</div>
+                                <div>Go to the Video</div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, conuuusectetur adipisicing elit. Delectus quo voluptate
+                                ducimus
+                                quisquam blanditiis nesciunt. Undhhe tempora rem culpa dolorum magni perspiciatis
+                                veritatis,
+                                expedita eligendi eos explicabo enitttkkkm. Voluptatum, veniam.</p>
+
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="labs">
+                    <div class="lab-head">Labs for Lab Design in HTML</div>
+                    <ul>
+                        <li>
+                            <h4></h4>
+                            <p>In this Lab we will be discussing an alternative to using your PC and IDE (Integrated
+                                Development environment ) for running and writing your python programs, interesting
+                                right?
+                                Yeah. This alternative is using your mobile phone to run your codes. There are several
+                                application available for doing this, but for the sake of this lab, we will be focusing
+                                on
+                                Qpython3. Feel free to research and use other. 1. Download the Application</p>
+                            <br>
+                            <h4> Note :</h4>
+                            <p>Qpython3 is available on both the Google Playstore and Apple Appstore.</p>
+                            <br>
+                            <h4>Task:</h4>
+                            <p>Download Qpython3 from either store according to the make of your phone Or visit
+                                their
+                                website on https://www.qpython.com/ and follow this instructions.</p>
+                            <br>
+                            <h4> Hint:</h4>
+                        </li>
+                        <div class="task-subs section-5">
+                            <div>
+                                <form>
+                                    <input type="file" id="file-upload" style="display: none;" />
+                                    <label for="file-upload"><img src="/my-app/src/images/upload.svg">Upload Lab</label>
+                                    <div id="file-upload-filename"><img src="/my-app/src/images/file.svg"><i>Your file
+                                            will be here</i></div>
+                                    <div><button type="submit">Submit the task<img
+                                                src="/my-app/src/images/submit.svg"></button></div>
+                                </form>
+                            </div>
+                        </div>
+                        <li>
+                            <h4></h4>
+                            <p>In this Lab we will be discussing an alternative to using your PC and IDE (Integrated
+                                Development environment ) for running and writing your python programs, interesting
+                                right?
+                                Yeah. This alternative is using your mobile phone to run your codes. There are several
+                                application available for doing this, but for the sake of this lab, we will be focusing
+                                on
+                                Qpython3. Feel free to research and use other. 1. Download the Application</p>
+                            <br>
+                            <h4> Note :</h4>
+                            <p>Qpython3 is available on both the Google Playstore and Apple Appstore.</p>
+                            <br>
+                            <h4>Task:</h4>
+                            <p>Download Qpython3 from either store according to the make of your phone Or visit
+                                their
+                                website on https://www.qpython.com/ and follow this instructions.</p>
+                            <br>
+                            <h4> Hint:</h4>
+                        </li>
+                        <div class="task-subs section-5">
+                            <div class="fail">
+                                <div><img src="/my-app/src/images/fail.svg">Fail</div>
+                                <div><img src="/my-app/src/images/file.svg"><i>funzi.jpg</i></div>
+                                <div onclick="openFeedBack()">Read Feedback<img src="/my-app/src/images/submit.svg">
+                                </div>
+
+                            </div>
+                        </div>
+                        <li>
+                            <h4></h4>
+                            <p>In this Lab we will be discussing an alternative to using your PC and IDE (Integrated
+                                Development environment ) for running and writing your python programs, interesting
+                                right?
+                                Yeah. This alternative is using your mobile phone to run your codes. There are several
+                                application available for doing this, but for the sake of this lab, we will be focusing
+                                on
+                                Qpython3. Feel free to research and use other. 1. Download the Application</p>
+                            <br>
+                            <h4> Note :</h4>
+                            <p>Qpython3 is available on both the Google Playstore and Apple Appstore.</p>
+                            <br>
+                            <h4>Task:</h4>
+                            <p>Download Qpython3 from either store according to the make of your phone Or visit
+                                their
+                                website on https://www.qpython.com/ and follow this instructions.</p>
+                            <br>
+                            <h4> Hint:</h4>
+                        </li>
+                        <div class="task-subs section-5">
+                            <div class="pass">
+                                <div><img src="/my-app/src/images/fail.svg">Pass</div>
+                                <div><img src="/my-app/src/images/file.svg"><i>funzi.jpg</i></div>
+                                <div onclick="openFeedBack()">Read Feedback<img src="/my-app/src/images/submit.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="closefeedback">
+                        <div class="cover"></div>
+                        <div class="read-feed">
+                            <div class="closed" onclick="closeFeedBack()"><img src="../images/close.svg"></div>
+                            <div class="feed-back">
+                                <div><img src="../images/profilelogo.png"></div>
+                                <div>
+                                    <h4>Mary Shiwauva</h4>
+                                    <h4><i>Instructor</i></h4>
+                                </div>
+                            </div><br>
+                            <p>In this Lab we will be discussing an alternative to using your PC and IDE (Integrated
+                                Development environment ) for running and writing your python programs, interesting
+                                right?
+                                Yeah. This alternative is using your mobile phone to run your codes. There are several
+                                application available for doing this, but for the sake of this lab, we will be focusing
+                                on
+                                Qpython3. Feel free to research and use other. 1. Download the Application
+                                In this Lab we will be discussing an alternative to using your PC and IDE (Integrated
+                                Development environment ) for running and writing your python programs, interesting
+                                right?
+                                Yeah. This alternative is using your mobile phone to run your codes. There are several
+                                application available for doing this, but for the sake of this lab, we will be focusing
+                                on
+                                Qpython3. Feel free to research and use other. 1. Download the Application</p><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat">
+                <div class="chat-1">
+                    <div class="chats">
+                        <div class="select-user"><img src="../images/search.svg">Select User</div>
+                        <ul>
+                            <li>
+                                <div class="general">
+                                    <div><img src="../images/chat.svg" style="margin-left: 15px;"></div>
+                                    <div>
+                                        <h4>General Chat</h4>
+                                    </div> <img src="../images/ar1.svg" style="margin-left: 55px;">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="members">
+                                    <div><img src="../images/profilelogo.png"></div>
+                                    <div>
+                                        <h4>Mary Shiwauva</h4>
+                                        <p>Working with you..</p>
+                                    </div> <img src="../images/ar1.svg" style="margin-left: 15px;">
+                                </div>
+                            </li>
+                            <li style="background: #F1F3FD;;">
+                                <div class="members" >
+                                    <div><img src="../images/profilelogo.png"></div>
+                                    <div>
+                                        <h4>Mary Shiwauva</h4>
+                                        <p>Working with you..</p>
+                                    </div> <img src="../images/ar1.svg" style="margin-left: 15px;">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="members">
+                                    <div><img src="../images/profilelogo.png"></div>
+                                    <div>
+                                        <h4>Mary Shiwauva</h4>
+                                        <p>Working with you..</p>
+                                    </div> <img src="../images/ar1.svg" style="margin-left: 15px;">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="members">
+                                    <div><img src="../images/profilelogo.png"></div>
+                                    <div>
+                                        <h4>Mary Shiwauva</h4>
+                                        <p>Working with you..</p>
+                                    </div> <img src="../images/ar1.svg" style="margin-left: 15px;">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="members">
+                                    <div><img src="../images/profilelogo.png"></div>
+                                    <div>
+                                        <h4>Mary Shiwauva</h4>
+                                        <p>Working with you..</p>
+                                    </div> <img src="../images/ar1.svg" style="margin-left: 15px;">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chats-mgs">
+                        <div class="parts"><img src="../images/hamburger.svg">List of Participants<img
+                                src="../images/arrowdown.svg" style="margin-left: 13rem;" onclick="showParticipants()">
+                        </div>
+                        <div class="block">
+                            <div class="showParticipants">
+                                <div class="part-members">
+                                    <img src="../images/profilelogo.png">Mary Shiwauva
+                                </div>
+                                <div class="part-members">
+                                    <img src="../images/profilelogo.png">Mary Shiwauva
+                                </div>
+                                <div class="part-members">
+                                    <img src="../images/profilelogo.png">Mary Shiwauva
+                                </div>
+                                <div class="part-members">
+                                    <img src="../images/profilelogo.png">Mary Shiwauva
+                                </div>
+                                <div class="part-members">
+                                    <img src="../images/profilelogo.png">Mary Shiwauva
+                                </div>
+                                <div class="part-members">
+                                    <img src="../images/profilelogo.png">Mary Shiwauva
+                                </div>
+                                <div class="part-members">
+                                    <img src="../images/profilelogo.png">Mary Shiwauva
+                                </div>
+                                <div class="part-members">
+                                    <img src="../images/profilelogo.png">Mary Shiwauva
+                                </div>
+                                <div class="part-members">
+                                    <img src="../images/profilelogo.png">Mary Shiwauva
+                                </div>
+                                <div class="part-members">
+                                    <img src="../images/profilelogo.png">Mary Shiwauva
+                                </div>
+                                <div class="part-members">
+                                    <img src="../images/profilelogo.png">Mary Shiwauva
+                                </div>
+                                <div class="part-members">
+                                    <img src="../images/profilelogo.png">Mary Shiwauva
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="convo">
+                            <div class="">
+                                <div class="part-name">
+                                    <img src="../images/profilelogo.png">Mary Shiwauva:
+                                </div>
+                                <div class="conversations">
+                                    <span style=" color: #ACB7EB ;">09:15</span>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="part-name">
+                                    <img src="../images/profilelogo.png">Mary Shiwauva:
+                                </div>
+                                <div class="conversations">
+                                    <span style=" color: #ACB7EB ;">09:15</span>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="my-conversations">
+                                    <span style=" color: #ACB7EB ;">You:</span>
+                                    <span style=" color: #ACB7EB ;">09:15</span>
+                                    funziem ipsum dolor sit amet consectetur, adipisicing elit.
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="part-name">
+                                    <img src="../images/profilelogo.png">Mary Shiwauva:
+                                </div>
+                                <div class="conversations">
+                                    <span style=" color: #ACB7EB ;">09:15</span>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="online-chats">
+                            <div class="sendmsgs"><img src="../images/emoji.svg"><input type="text"
+                                    placeholder="Type a message"><img src="../images/file.svg">
+                            </div>
+
+                            <button class="sendbtn">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

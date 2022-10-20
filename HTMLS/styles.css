@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav {
+    background-color: black;
+    padding: 10px 3%;
+    color: white;
+    font-size: 20px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.space img {
+    margin-left: 10px;
+}
+
+
+.main {
+    padding: 7% 12% 1.5%;
+    display: flex;
+    gap: 7rem;
+}
+
+.left {
+    width: 21%;
+}
+
+/* .right {
+    width: 68%;
+    background-color: green;
+} */
+
+.profile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+.profile-img img {
+    width: 210px;
+    height: 230px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.upload {
+    position: absolute;
+    margin-top: 13rem;
+    background-color: rgba(128, 11, 101, 1);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.upload img {
+    max-width: 22px;
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+    filter: invert(1);
+}
+
+.profile-img li:nth-child(2) {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.menus ul li,
+.profile ul li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 10px;
+}
+
+.menu li img:nth-child(1) {
+    background: rgba(241, 243, 253, 1);
+    padding: 10px 10px;
+    border-radius: 15px;
+}
+
+.menu li img:nth-child(2) {
+    filter: invert(1);
+}
+
+.menu li:hover {
+    background: rgba(241, 243, 253, 1);
+    padding: 0;
+    border-radius: 15px;
+}
+
+.menu li:nth-child(4) {
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li:nth-child(4):hover {
+    background: none;
+}
+
+.profile-title {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.profile-title img {
+    background: rgba(241, 243, 253, 1);
+    padding: 10px 10px;
+    border-radius: 15px;
+}
+
+.section ol {
+    list-style: none;
+    position: relative;
+    counter-reset: li
+}
+
+.one .section li {
+    position: relative;
+}
+
+.section li::before {
+    position: absolute;
+    content: counter(li);
+    color: rgba(128, 11, 101, 1);
+    display: inline-block;
+    margin-left: -2em;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+.section li {
+    margin-bottom: 35px;
+    counter-increment: li
+}
+
+.section label {
+    display: block;
+    font-size: 18px;
+    top: 0;
+    margin-top: 20px;
+    margin-bottom: 17px;
+}
+
+.section-1 {
+    box-shadow: 0px 4px 29px #F0F3FF;
+    border-radius: 35px;
+    padding: 30px 90px 40px 80px;
+    position: relative;
+}
+
+.section-1 button {
+    padding: 10px 12px;
+    margin-right: 2em;
+    border-radius: 8px;
+    border: none;
+    border-color: rgba(241, 243, 253, 1);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.section input {
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+    background: rgba(241, 243, 253, 1);
+}
+
+.tick {
+    position: absolute;
+    margin-top: -20px;
+    right: 20px;
+    background-color: rgba(128, 11, 101, 1);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.tick img {
+    width: 21px;
+    height: 20px;
+    display: flex;
+    filter: invert(4);
+}
+
+/* hides */
+.course_study,
+.yesGraduate,
+.completed,
+.graduate,
+.two,
+.three,
+.next,
+.notCompleted {
+    display: none;
+}
+
+/* hides end */
+
+.course_study input,
+.graduate,
+.yesGraduate input,
+.notCompleted input {
+    margin-top: 10px;
+    margin-right: 18px;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    width: 45%;
+    background: rgba(241, 243, 253, 1);
+}
+
+.graduate {
+    padding: 0;
+}
+
+.completed {
+    margin-left: 25px;
+}
+
+.next button {
+    position: absolute;
+    background: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 20px;
+    margin-left: 25%;
+}
+
+/* styles fpor range */
+
+.section-2 {
+    box-shadow: 0px 4px 29px #F0F3FF;
+    border-radius: 35px;
+    padding: 30px 40px 0px;
+    position: absolute;
+    width: 50%;
+}
+
+.box {
+    width: 45%;
+    margin-bottom: 40px;
+}
+
+.section-level {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.section-level label,
+h3 i {
+    display: inline-block;
+    margin: 0 40% 10px 5px;
+    color: rgba(172, 183, 235, 1);
+    font-size: 18px;
+}
+
+.d-none {
+    display: none;
+    color: red;
+}
+
+.d-block {
+    display: block;
+}
+
+.fool {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.section-level input {
+    position: relative;
+    width: 90%;
+}
+
+.done {
+    position: absolute;
+    background: blue;
+    color: white;
+    margin-top: -30px;
+    margin-left: 32%;
+    padding: 15px 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    display: none;
+}
+
+/* end */
+
+/* styles for profile/ */
+
+
+.profile_logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 2rem;
+}
+
+.profile_logo img {
+    background: rgba(241, 243, 253, 1);
+    padding: 10px 10px;
+    border-radius: 15px;
+}
+
+.part-1 {
+    display: flex;
+    margin-top: 30px;
+    box-shadow: 0px 4px 29px #F0F3FF;
+    border-radius: 35px;
+    padding: 50px 40px;
+    position: relative;
+    gap: 10px;
+}
+
+.part-1 label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.part-1 input {
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+    background: rgba(241, 243, 253, 1);
+}
+
+.slider {
+    appearance: none;
+    height: 8px;
+    background: #d3d3d3;
+    border-radius: 10px;
+
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background: rgba(128, 11, 101, 1);
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.section-3 .tick {
+    margin-top: -35px;
+}
+
+.interest {
+    display: block;
+}
+
+.interest .section-level {
+    height: 15vh;
+    overflow: auto;
+    margin-top: 20px;
+    padding: 0;
+}
+
+
+/* hide scrollbar */
+.interest .section-level::-webkit-scrollbar {
+    display: none;
+}
+
+.yesNo {
+    position: absolute;
+    display: flex;
+    top: 5px;
+    left: 40%;
+}
+
+.yes1,
+.yes2,
+.yes3,
+.yes4 {
+    color: rgba(128, 11, 101, 1);
+    font-weight: bold;
+    display: none;
+}
+
+.no1,
+.no2,
+.no3,
+.no4 {
+    color: grey;
+    font-weight: bold;
+    display: none;
+}
+
+.yesN {
+    position: relative;
+    display: flex;
+    top: -2.2rem;
+    left: 47%;
+}
+
+.yesNon {
+    position: absolute;
+    margin-bottom: 0;
+    top: 0.1rem;
+    right: -50px;
+}

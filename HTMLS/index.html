@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux JobberMan</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul>
+            <li><a href=""><img src="/my-app/src/images/jobber_logo.svg"></a></li>
+            <li><a href="">Classroom Profile</a></li>
+            <li class="space"><a href="./classroom.html">Go to Classroom <img src="../images/arrow.svg" alt=""></a></li>
+        </ul>
+    </nav>
+
+    <section class="main">
+        <div class="left">
+            <div class="profile">
+                <ul class="profile-img">
+                    <li><img src="../images/profilelogo.png"></li>
+                    <li>Funzi</li>
+                </ul>
+                <div class="upload">
+                    <input type="file" id="files" style="display: none;" />
+                    <label for="files"><img src="../images/camera.svg"></label>
+                </div>
+            </div>
+            <div class="menus">
+                <ul class="menu">
+                    <li class=""><a href=""><img src="../images/profile.svg"> Profile <img
+                                src="../images/arrow.svg"></a></li>
+                    <li class=""><a href=""><img src="../images/courses.svg"> Courses <img
+                                src="../images/arrow.svg"></a></li>
+                    <li class=""><a href=""><img src="../images/attendancec.svg" style="padding:15px 12px ;"> Attendance
+                            <img src="../images/arrow.svg"></a></li>
+                    <li class=""><a href=""><img src="../images/logout.svg" style="background-color: white;"> Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+
+            <div class="section-1 one">
+                <div class="tick"><img src="../images/attendancec.svg"></div>
+                <div class="section">
+                    <ol>
+                        <li>
+                            <div>
+                                <label for="course">Course of study in school</label>
+                                <input type="text" id="course" placeholder="Course of study" />
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+
+                                <label for="">Are you a student?</label>
+                                <div class="yesNo">
+                                    <span class="yes1"><img src="../images/checkmark.svg"> Yes</span>
+                                    <span class="no1"><img src="../images/close.svg"> No</span>
+                                </div>
+
+
+                                <div>
+                                    <Button onclick="student()">Yes</Button><button onclick="noStudent()">No</button>
+                                </div>
+                                <div class="course_study">
+                                    <input type="text" id="course" placeholder="Course of study" />
+                                    <input type="text" id="course" placeholder="Expected Graduation date" />
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <label for="">Did you graduate?</label>
+                                <div class="yesNo">
+                                    <span class="yes2"><img src="../images/checkmark.svg"> Yes</span>
+                                    <span class="no2"><img src="../images/close.svg"> No</span>
+                                </div>
+                                <div>
+                                    <button onclick="yesGraduate()">Yes</button><button
+                                        onclick="noGraduate()">No</button>
+                                </div>
+                                <div class="graduate">
+                                    <input type="text" id="" placeholder="Current Occupation" />
+                                </div>
+                                <div class="yesGraduate">
+                                    <input type="text" id="course" placeholder="Course of study" />
+                                    <input type="text" id="course" placeholder="Graduation date" />
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <label for="">Does your country require post-graduation services?</label>
+                                <div class="yesNon">
+                                    <span class="yes3"><img src="../images/checkmark.svg"> Yes</span>
+                                    <span class="no3"><img src="../images/close.svg"> No</span>
+                                </div>
+                                <div>
+                                    <button onclick="postGraduate()">Yes</button><button
+                                        onclick="noPostgraduate()">No</button>
+                                </div>
+                                <div class="completed">
+                                    <label for="">Have you completed?</label>
+                                    <div class="yesN">
+                                        <span class="yes4"><img src="../images/checkmark.svg"> Yes</span>
+                                        <span class="no4"><img src="../images/close.svg"> No</span>
+                                    </div>
+                                    <div>
+                                        <button onclick="completed()">Yes</button><button
+                                            onclick="notCompleted()">No</button>
+                                    </div>
+                                    <div class="notCompleted">
+                                        <input type="text" id="course" placeholder="Expected date of completion"
+                                            style="width: 60%;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ol>
+                </div>
+                <div class="next">
+                    <button onclick="next()">Next Step <img src="../images/arrow.svg" alt=""></button>
+                </div>
+
+            </div>
+
+            
+            <div class="section-2  two">
+                <div class="tick"><img src="../images/attendancec.svg"></div>
+                <h3 style="margin: 30px 0 0px;">Score your level of interest in these job titles:</h3>
+                <br>
+                <div class="section-level">
+
+                    <div class="box">
+                        <div class="fool">
+                            <div><label for="course">Cybersecurity</label></div>
+                            <div><span id="myrange1">0</span><span>/10</span></div>
+                        </div>
+                        <input type="range" oninput="rangeChange(this.id)" min="1" max="10" value="0" class="slider"
+                            id="1">
+                    </div>
+                    <div class="box">
+                        <div class="fool">
+                            <div><label for="course">Cybersecurity</label></div>
+                            <div><span id="myrange2">0</span><span>/10</span></div>
+                        </div>
+                        <input type="range" oninput="rangeChange(this.id)" min="1" max="10" value="0" class="slider"
+                            id="2">
+                    </div>
+                    <div class="box">
+                        <div class="fool">
+                            <div><label for="course">Cybersecurity</label></div>
+                            <div><span id="myrange3">0</span><span>/10</span></div>
+                        </div>
+                        <input type="range" oninput="rangeChange(this.id)" min="1" max="10" value="0" class="slider"
+                            id="3">
+                    </div>
+                    <div class="box">
+                        <div class="fool">
+                            <div><label for="course">Cybersecurity</label></div>
+                            <div><span id="myrange4">0</span><span>/10</span></div>
+                        </div>
+                        <input type="range" oninput="rangeChange(this.id)" min="1" max="10" value="0" class="slider"
+                            id="4">
+                    </div>
+                    <div class="box">
+                        <div class="fool">
+                            <div><label for="course">Cybersecurity</label></div>
+                            <div><span id="myrange5">0</span><span>/10</span></div>
+                        </div>
+                        <input type="range" oninput="rangeChange(this.id)" min="1" max="10" value="0" class="slider"
+                            id="5">
+                    </div>
+                    <div class="box">
+                        <div class="fool">
+                            <div><label for="course">Cybersecurity</label></div>
+                            <div><span id="myrange6">0</span><span>/10</span></div>
+                        </div>
+                        <input type="range" oninput="rangeChange(this.id)" min="1" max="10" value="0" class="slider"
+                            id="6">
+                    </div>
+                    <div class="box">
+                        <div class="fool">
+                            <div><label for="course">Cybersecurity</label></div>
+                            <div><span id="myrange7">0</span><span>/10</span></div>
+                        </div>
+                        <input type="range" oninput="rangeChange(this.id)" min="1" max="10" value="0" class="slider"
+                            id="7">
+                    </div>
+                    <div class="box">
+                        <div class="fool">
+                            <div><label for="course">Cybersecurity</label></div>
+                            <div><span id="myrange8">0</span><span>/10</span></div>
+                        </div>
+                        <input type="range" oninput="rangeChange(this.id)" min="1" max="10" value="0" class="slider"
+                            id="8">
+                    </div>
+
+
+
+                </div>
+                <h3><i id="errorDiv" class="d-none">* You cannot pick a number twice</i></h3>
+                <br><br><br><br>
+                <div class="">
+                    <button onclick="done()" class="done">Done </button>
+                </div>
+
+            </div>
+
+            <div class="section-3 three">
+                <div class="profile_logo"><img src="../images/profile.svg"> Your Profile</div>
+                <div class="part-1">
+                    <div class="tick"><img src="../images/attendancec.svg"></div>
+                    <div>
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" placeholder="Funzi" />
+                    </div>
+                    <div>
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" placeholder="Funzi" />
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="funzi@gmail.com" />
+                    </div>
+                </div>
+                <div class="part-1">
+                    <div class="tick"><img src="../images/attendancec.svg"></div>
+                    <div>
+                        <label for="first-name">Course of study in school:</label>
+                        <input type="text" id="first-name" placeholder="Medical Lab Science" />
+                    </div>
+                    <div>
+                        <label for="last-name">I am a student:</label>
+                        <input type="text" id="last-name" placeholder="Developer" />
+                    </div>
+                    <div>
+                        <label for="email">Graduation date:</label>
+                        <input type="email" id="email" placeholder="October 4th, 2022" />
+                    </div>
+                </div>
+                <div class="part-1 interest">
+                    <div>My Interests:</div>
+                    <div class="section-level">
+                        <div class="box">
+                            <div class="fool">
+                                <div><label for="course">Cybersecurity</label></div>
+                                <div><span id="demo">3</span><span>/10</span></div>
+                            </div>
+                            <input type="range" min="1" max="10" value="3" id="myRange" disabled />
+
+                        </div>
+
+                        <div class="box">
+                            <div class="fool">
+                                <div><label for="course">Developer</label></div>
+                                <div><span id="demo">5</span><span>/10</span></div>
+                            </div>
+                            <input type="range" min="1" max="10" value="5" id="myRange" disabled />
+
+                        </div>
+                        <div class="box">
+                            <div class="fool">
+                                <div><label for="course">DevOps</label></div>
+                                <div><span id="demo">9</span><span>/10</span></div>
+                            </div>
+                            <input type="range" min="1" max="10" value="9" id="myRange" disabled />
+
+                        </div>
+                        <div class="box">
+                            <div class="fool">
+                                <div><label for="course">Designer</label></div>
+                                <div><span id="demo">6</span><span>/10</span></div>
+                            </div>
+                            <input type="range" min="1" max="10" value="6" id="myRange" disabled />
+
+                        </div>
+                        <div class="box">
+                            <div class="fool">
+                                <div><label for="course">Project_Manager</label></div>
+                                <div><span id="demo">8</span><span>/10</span></div>
+                            </div>
+                            <input type="range" min="1" max="10" value="8" id="myRange" disabled />
+
+                        </div>
+                        <div class="box">
+                            <div class="fool">
+                                <div><label for="course">Product_Manager</label></div>
+                                <div><span id="demo">10</span><span>/10</span></div>
+                            </div>
+                            <input type="range" min="1" max="10" value="10" id="myRange" disabled />
+
+                        </div>
+                        <div class="box">
+                            <div class="fool">
+                                <div><label for="course">Marketer</label></div>
+                                <div><span id="demo">7</span><span>/10</span></div>
+                            </div>
+                            <input type="range" min="1" max="10" value="7" id="myRange" disabled />
+
+                        </div>
+                        <div class="box">
+                            <div class="fool">
+                                <div><label for="course">Writer</label></div>
+                                <div><span id="demo">1</span><span>/10</span></div>
+                            </div>
+                            <input type="range" min="1" max="10" value="1" id="myRange" disabled />
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+    </section>
+</body>
+
+</html>
